@@ -1,0 +1,28 @@
+{
+  "name": "react-keycloak-sample-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/server.js",
+    "client": "cd client && npm run start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "serverInstall": "cd server && npm install",
+    "clientInstall": "cd client && npm install",
+    "final": "npm install && concurrently \"npm run serverInstall\" \"npm run clientInstall\" \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tullochojamoy/spotify-petproject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tullochojamoy/spotify-petproject/issues"
+  },
+  "homepage": "https://github.com/tullochojamoy/spotify-petproject#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
