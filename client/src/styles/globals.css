@@ -1,0 +1,61 @@
+/* Sidebar Styles */
+#side_nav{
+  background: #574FD8;
+  min-width: 170px;
+  max-width: 250px;
+  transition: all 0.2s;
+}
+
+.content{
+  min-height: 100vh;
+  width: 100%;
+  min-width: 80vw;
+}
+
+@media(max-width: 767px){
+  #side_nav{
+    margin-left: -250px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  #side_nav.active{
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* Remove Link Styles */
+.link-unstyled, .link-unstyled:link, .link-unstyled:hover, .link-unstyled:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+
+
+/* Custom Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
