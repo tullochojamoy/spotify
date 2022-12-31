@@ -24,6 +24,5 @@
   "homepage": "https://github.com/tullochojamoy/spotify-petproject#readme",
   "dependencies": {
     "concurrently": "^7.6.0",
-    "express": "^4.18.2",
   }
 }
